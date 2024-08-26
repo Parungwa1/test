@@ -1,52 +1,69 @@
-let cart = [];
-
-function addToCart(button) {
-    const item = button.parentElement;
-    const name = item.getAttribute('data-name');
-    const price = item.getAttribute('data-price');
-    const image = item.getAttribute('data-image');
-
-    cart.push({ name, price, image });
-    updateCart();
+body {
+    font-family: Arial, sans-serif;
 }
 
-function updateCart() {
-    const cartItems = document.getElementById('cart-items');
-    cartItems.innerHTML = '';
-
-    cart.forEach((item, index) => {
-        const li = document.createElement('li');
-        li.innerHTML = `${item.name} - $${item.price} <button onclick="removeFromCart(${index})">Remove</button>`;
-        cartItems.appendChild(li);
-    });
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
 }
 
-function removeFromCart(index) {
-    cart.splice(index, 1);
-    updateCart();
+.item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
 }
 
-function checkout() {
-    const paymentModal = document.getElementById('payment-modal');
-    const paymentDetails = document.getElementById('payment-details');
-    paymentDetails.innerHTML = '';
-
-    cart.forEach(item => {
-        const div = document.createElement('div');
-        div.innerHTML = `<img src="${item.image}" alt="${item.name}" width="50"> ${item.name} - $${item.price}`;
-        paymentDetails.appendChild(div);
-    });
-
-    paymentModal.style.display = 'block';
+.cart {
+    margin-top: 20px;
+    text-align: center;
 }
 
-function closeModal() {
-    document.getElementById('payment-modal').style.display = 'none';
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
 }
 
-function payNow() {
-    alert('Payment processed through Visa, MasterCard, or PayPal.');
-    cart = [];
-    updateCart();
-    closeModal();
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+    .modal-content {
+        width: 90%;
+    }
 }
