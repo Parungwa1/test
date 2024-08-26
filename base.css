@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@500;600&family=Darker+Grotesque&display=swap');
+
+  
+body {
+    font-family: "Roboto";
+}
+h2 {
+    font-family: "Poppins";
+    color: #6641d5;
+}
+/* -------------------------------header--------------------------------- */
+header {
+  background-color: #001242;
+  color: white;
+  width: 100%;
+  display: flex;
+  
+}
+.logo {
+  width: auto;
+  height: 30px;
+  background-color: white;
+  margin: 32px 5px 10px 10px;
+  display: flex;
+}
+#formatted-date {
+  display: block;
+  background-color: #f4e9e3;
+  color: rgb(59, 82, 165);
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 15px;
+  margin: 15px 0;
+}
+#banner {
+  padding: 10px;
+  text-align: center;
+}
+label.content input:required {
+  border-left: #9f4900 solid 5px;
+}
+.submitbtn {
+  background-color: #9f4900;
+  color: #fefefe;
+  font-family: "Poppins";
+  padding:18px;
+  font-size: 18px;
+  border-radius: 15px;
+  margin: 10px 0;
+  border: rgb(18, 53, 84);
+  box-shadow: absolute;
+}
+.submitbtn:hover {
+  background-color: #351c48;
+  color: #46d541;
+}
+.membershiptype_container {
+  display: grid;
+  padding: 10px;
+  color:#4a009f
+}
+
+.thankyou_container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: absolute;
+  padding: 50px;
+  color: #fefefe;
+  font-family: "Roboto";
+  background-color: #271c48;
+}
+.thankyou_img {
+  width: 200px;
+  position: center;
+}
+.thankyou_h1 {
+  color: white;
+  margin: 25px 0;
+  position: center;
+}
+.thankyou_p {
+  font-size: 30px;
+}
+.thankyou_page button {
+  color: #fefefe;
+  background-color: #9f0042;
+  font-family: "Poppins";
+  font-size: 25px;
+  padding: 20px;
+  border: none;
+  width: fit-content;
+  border-radius: 25px;
+  margin-top: 50px;
+}
+.thankyou_button:hover {
+  background-color: #d54141;
+  color: #1d009f;
+  cursor: pointer;
+}
+/* --------------------------------nav----------------------------------- */
+nav ul {
+  list-style: none;
+  font-size: 25px;
+  padding: 0;
+  margin: 0;
+  display: none;
+}
+nav ul.open {
+  display: block;
+}
+nav ul li a {
+  color: #d59c41;
+  text-decoration: none;
+  font-family: "Poppins";
+  border-top: 1px solid #d59c41;
+  display: block;
+  padding: .8rem 2vw;
+  font-weight: bold;
+}
+nav button {
+  margin: .3rem 3vw;
+  background: transparent;
+  border: none;
+  font-size: 2rem;
+  color: #d59c41;
+}
+nav button:hover {
+  color: #22009f;
+}
+nav ul li a:hover {
+  background-color: #4a009f;
+}
+
+
+.directory_container.list img{
+  display: none;
+}
+.directory_container.list h2 {
+  color: black;
+  font-size: 17px;
+}
+.directory_container.list section {
+  box-shadow: none;
+}
+.directory_container.list section:nth-child(even) {
+  background-color: #c2b0a200;
+}
+#contact_info{
+  text-align: center;
+}
+#contact_info{
+  grid-row: 1/2;
+}
+
+#map h2{
+  display: none;
+}
+
+iframe{
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+#contact_info h2{
+  margin: 0.5em;
+}
+
+#contact_info p{
+  margin: 0;
+  padding: 0.75em;
+}
+
+/* --------------------------------main---------------------------------- */
+/* hero */
+.hero {
+  position: relative;
+}
+.hero img {
+  width: 100%;
+}
+.hero_title {
+  position: center;
+  top: 1rem;
+  left: 10px;
+}
+.hero h2 {
+  font-weight: bold;
+  padding: 0 5px;
+  font-size: 20px;
+  color: #d59c41;
+  font-weight: bolder;
+  background-color: #f4e9e3;
+}
+.hero_button {
+  position: absolute;
+  bottom: 15px;
+  right: 10px;
+}
+.hero button {
+  border: none;
+  background-color: #f4e9e3;
+  color: #d59c41;
+  font-size: 30px;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+.hero button:hover  {
+  background-color: #1c4839;
+  color: #d59c41;
+  cursor: pointer;
+}
+/* events */
+.event {
+  border:2px solid #000022;
+  background-color: #005E7C;
+}
+.event img {
+  width:20%;
+  position: center;
+  left: 40px;
+}
+
+.weather-box {
+  border: 1px solid #d4d4e8;
+  background-color: #a8a5be;
+  text-align: center;
+  font-size: 1rem;
+  size: 20px;
+}
+
+.weather-box h1 {
+  font-size: 1.5rem;
+  font-family: 'arial', sans-serif;
+}
+.weather-box  {
+  box-sizing: 5px;
+  
+}
+
+.weather-box img {
+  width: 1%;
+  
+}
+  
+.news {
+  text-align: center;
+  background-color: #f4e9e3;
+  padding: 20px;
+}
+/* join */
+.join {
+  display: none;
+}
+/* spotlight */
+.spotlight {
+  margin: 10px;
+  background-color: #f4e9e3;
+  padding: 15px;
+}
+/* spotlight_1 */
+.spotlight_1 {
+  background-color: #fefefe;
+  text-align: center;
+  padding: 5px;
+}
+.spotlight_1 p {
+  font-size: 11px;
+}
+/* spotlight_2 */
+.spotlight_2 {
+  background-color: #fefefe;
+  text-align: center;
+  padding: 5px;
+}
+.spotlight_2 img {
+  width: 50%;
+}
+
+/* -------------------------------the footer, logo, direction and line -------------- */
+footer {
+  background-color: #2b1c48;
+  color: #2f29;
+  padding: 1px;
+  text-align: center;
+}
+
+.footer_logo {
+  width: auto;
+  height: 40px;
+  float: left;
+}
+
+
+.info {
+   float: left;
+   margin-top: 5px;
+}
+.contact p {
+   font-size: 22px;
+   
+}
+   
+.footer_line {
+   display: flex;
+}
+.footer_logooo {
+  width: 10%;
+  position: absolute;
+}
+
+.direction {
+  text-decoration: none;
+  color: whitesmoke;
+}
+.footer_lineooo {
+  margin-top: 5px;
+}
+
+
+.discover_main {
+  padding: 5px;
+}
+.discover_main h2 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.discover_container img {
+  width: 100%;
+  border-radius: 15px;
+}
+.information img {
+  margin: 15px 0;
+}
+.image_gallery img {
+  margin-top: 20px;
+}
+.images {
+  width: 50%;
+}
+
+/* ---------------------------------------fill the form to myjoin Page---------------------------------------------- */
+.mypage {
+  display: grid;
+}
+.form_container {
+  margin-top: 20px;
+  background-color: #180556;
+  margin-top: 15px;
+  border-radius:15px;
+  padding: 10px;
+ 
+}
+.form_container h1 {
+  color: #5541d5;
+}
+fieldset {
+  display: -ms-grid;
+  flex-direction: row;
+  margin-top: 20px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+label {
+  color: #434d4f;
+  padding: 8px;
+}
+label.content input {
+  display: block;
+  font-size: 1rem;
+  border: 8px solid #481c40;
+  border-radius: 5px;
+  padding: .75rem;
+  width: 90%;
+  max-width: 24rem;
+  background-color: rgb(228, 225, 225);
+}
+.directory {
+  padding: 15px;
+}
+
+.directory h1 {
+  color: #4146d5;
+}
+
+.grid_list_button {
+  text-align: center;
+  margin: 30px 0;
+}
+#list, #grid {
+  font-size: 40px;
+  color: #9f4900;
+  border: 2px solid #9f4900;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+#list {
+  margin-right: 10px;
+}
+#grid {
+  margin-left: 10px;
+}
+
+.directory img {
+  width: 150px;
+}
+.directory_container.grid {
+  text-align: center;
+}
+
+.cards section {
+  margin: 15px 0;
+  padding: 15px;
+  box-shadow: 0 4px 8px 0 rgba(40, 36, 36, 0.2), 0 6px 20px 0 rgba(179, 77, 77, 0.892);
+}
+
+
